@@ -105,7 +105,8 @@ def load_and_display_excel():
             # Ajuste aqui: selecionando as colunas na ordem desejada
             # Supondo que a coluna "Nome" esteja na posição correta em seu DataFrame
             # E ajustando os índices das colunas conforme necessário
-            selected_columns = ['Nome', 'Endereço e Informações', 'Nome do proprietario da terra', 'Nome da Propriedade']
+            # selected_columns = ['Nome', 'Endereço e Informações', 'Nome do proprietario da terra', 'Nome da Propriedade']
+            selected_columns = ['Nome', 'Endereço e Informações', 'Nome do proprietario da terra']
             df_pdf = df_temp[selected_columns]  # Usando os nomes das colunas diretamente
             
             pdf_bytes = create_pdf(df_pdf, row['Endereço'])
